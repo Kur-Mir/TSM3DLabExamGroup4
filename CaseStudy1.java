@@ -12,6 +12,10 @@ public class CaseStudy1{
  	private double Balance;
 	private int AuthenticationTicket;
  	private String Position;
+	private String Address;
+  	private String Age;
+	private String EmployeeID;
+	private String AccountID;
 
 
 @WebMethod
@@ -55,11 +59,44 @@ public class CaseStudy1{
 	Position = pos;
 }
 @WebMethod
-	Public int getAuthenticationTicket(){
+	public int getAuthenticationTicket(){
 	Return AuthenticationTicket;
 }
 @WebMethod
-	Public void setAuthenticationTicket(int Auth){
+	public void setAuthenticationTicket(int Auth){
 	AuthenticationTicket = Auth;
 	}
+}
+@WebMethod
+	public String getAddress(){
+	return Address;
+   }
+@WebMethod
+	public void setAddress(String add){
+	Address = add;
+   }
+@WebMethod
+	public String getAge(){
+	return Age;
+   }
+@WebMethod
+	public void setAge(String ag){
+	Age = ag;
+   }
+@WebMethod
+   	public String getEmployeeID(){
+  	return EmployeeID;
+   }
+@WebMethod
+	public void setEmployeeID(String empid){
+	EmployeeID = empid;
+   }
+@WebMethod
+	public String getAccountID(){
+	return AccountID;
+   }
+@WebMethod
+	public void setAccountID(String accid){
+	AccountID = accid;
+   }
 }
