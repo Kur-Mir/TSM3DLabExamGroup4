@@ -17,5 +17,4 @@ public class CaseStudy1{
 	Public void setAuthenticationTicket(int Auth){
 	AuthenticationTicket = Auth;
 }
-
 }
