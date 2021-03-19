@@ -1,6 +1,8 @@
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-
+/* Account Example
+   EmployeeID: 12345
+   AccountID : 54321   */
 @WebService
 public class CaseStudy1 {
 private String Username;
@@ -95,4 +97,35 @@ WebMethod
 	AccountID = accid;
    }
 }
+@WebMethod
+   public void findAccount(String EmpID,String AccID){
+       if(EmpID.equals("12345") && AccID.equals("12345") || EmpID.equals("12345") || AccID.equals("12345")){
+
+  
+    
+           Username = "Heero";
+           Password = "password12345";
+           Name = "Hosenilla, Heero M.";
+           Position = "Manager";
+           Balance = 50000.0;
+           AuthenticationTicket = "D123AK13";
+           Address = "Fiesta Communities, San Rafael";
+           Age = 21;
+           EmployeeID = "12345";
+           AccountID = "12345";
+          
+       
+       }else {
+           Username = "";
+           Password = "";
+           Name = "";
+           Position = "";
+           Balance = 0.0;
+           AuthenticationTicket = "";
+           Address = "";
+           Age = 0;
+           EmployeeID = "";
+           AccountID = "";
+       }
+   }
 
