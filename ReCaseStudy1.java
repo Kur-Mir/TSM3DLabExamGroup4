@@ -3,6 +3,8 @@ import javax.jws.WebService;
 
 @WebService
 public class CaseStudy1 {
+private String Username;
+private String Password;
 private String Balance;
 private String Name;
 private String Posistion;
@@ -10,6 +12,22 @@ private String AuthenticationTicket;
 private String EmployeeID;
 private String AccountID;
 
+@WebMethod
+	public String getUsername(){
+	return Username;
+}
+@WebMethod
+	public void setUsername(String user){
+	Username = user;
+}
+@WebMethod
+	public String getPassword(){
+	return Password;
+}
+@WebMethod
+	public void setPassword(String pass){
+	Password = pass;
+}
 @WebMethod
 	public double getBalance(){
 	return Balance;
