@@ -7,6 +7,8 @@ private String Username;
 private String Password;
 private String Balance;
 private String Name;
+private String Address;
+private int Age;
 private String Posistion;
 private String AuthenticationTicket;     
 private String EmployeeID;
@@ -43,6 +45,22 @@ private String AccountID;
 @WebMethod
 	public void setName(String n){
 	Name = n;
+}
+@WebMethod
+	public String getAddress(){
+	return Address;
+}
+@WebMethod
+	public void setAddress(String addr){
+	Address = addr;
+}
+@WebMethod
+	public int getAge(){
+	return Age;
+}
+@WebMethod
+	public void setAge(int a){
+	Age = a;
 }
 @WebMethod
 	public String getPosition(){
