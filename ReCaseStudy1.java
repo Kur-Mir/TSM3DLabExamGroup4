@@ -3,10 +3,19 @@ import javax.jws.WebService;
 
 @WebService
 public class CaseStudy1 {
+private String Posistion;
 private String AuthenticationTicket;     
 private String EmployeeID;
 private String AccountID;
 
+@WebMethod
+	public String getPosition(){
+	return Position;
+}
+WebMethod
+	public void setPosition(String pos){
+	Position = pos;
+}
 @WebMethod
 	public String getAuthenticationTicket(){
 	return AuthenticationTicket;
